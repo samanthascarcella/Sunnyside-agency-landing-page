@@ -204,14 +204,13 @@ footer h2 {
 
 .links a {
     font-family: "Barlow", sans-serif;
-    padding: 0 5% 20% 5%;
+    padding: 0 5% 0% 5%;
     text-decoration: none;
     color: hsl(168, 34%, 41%);
 }
 
-footer img {
-    width: 20px;
-    padding: 10% 3%;
+.social-media-links img {
+    margin: 10% 3%;
 }
 
 /* --------- ACTIVATION COMPONENTS --------- */
