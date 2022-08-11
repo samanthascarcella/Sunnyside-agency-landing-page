@@ -31,8 +31,8 @@ PENDING
 
 ### Links
 
-- Solution URL: PENDING
-- Live Site URL: PENDING
+- Solution URL: https://github.com/samanthascarcella/Sunnyside-agency-landing-page
+- Live Site URL: https://samanthascarcella.github.io/Sunnyside-agency-landing-page/
 
 ## My process
 
