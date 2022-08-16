@@ -24,47 +24,40 @@ body {
     padding: 0;
 }
 
-header {
-    background: url(images/mobile/image-header.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 80vh;
-    max-height: 400px;
-    background-position: bottom;
-    max-width: 375px;
-}
-
-.nav-link {
-    text-align: center;
-    font-family: "Barlow", sans-serif;
-    font-size: 18px;
-    color: white;
-}
-
-.header-text {
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    font-weight: 900;
-    font-size: 40px;
-    letter-spacing: 5px;
-
-    padding-top: 45%;
-}
-
-.header-icon {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 21%;
-}
-
 img {
     max-width: 375px;
 }
 
 .desktop-image {
     display: none;
+}
+
+header {
+    max-width: 375px;
+}
+
+.header-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.header-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.header-icon {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .text-content {
@@ -179,7 +172,7 @@ img {
     font-family: "Barlow", sans-serif;
     font-size: 14px;
     color: hsl(210, 4%, 67%);
-    padding: 5% 0 20% 0;
+    padding: 0% 0 20% 0;
 }
 
 .image-gallery img {
@@ -245,13 +238,62 @@ footer h2 {
         max-width: 1440px;
     }
 
+    img {
+        max-width: 1440px;
+        max-height: 900px;
+    }
+
     header {
-        background: url(images/desktop/image-header.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height: 80vh;
-        max-height: 400px;
-        background-position: bottom;
         max-width: 1440px;
     }
+
+    .item1 {
+        display: flex;
+        flex-direction: row-reverse;
+
+        max-height: 600px;
+    }
+
+    .item2 {
+        display: flex;
+        max-height: 600px;
+    }
+
+    .image-and-text img {
+        max-width: 100%;
+    }
+
+    .text-content {
+        max-width: 50%;
+        max-height: auto;
+    }
+
+    .text-content {
+        text-align: start;
+
+        padding: 10% 10%;
+    }
+
+    .image-with-text-container {
+        display: flex;
+    }
+
+
+
+    .image-with-text p {
+        padding: 2% 15%;
+    }
+
+    .testimonial-list {
+        display: flex;
+    }
+
+    .image-gallery {
+        display: flex;
+    }
+
+    .image-gallery img {
+        max-width: 25%;
+    }
+
 }
