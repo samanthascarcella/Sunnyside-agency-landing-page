@@ -13,192 +13,188 @@
     href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
     rel="stylesheet">
 
-  <!-- BOOTSTRAP CSS LINK -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
   <!-- CSS LINK -->
-  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/queries.css">
 
 </head>
 
 <body>
-  <div class="container">
-    <!-- ----------- HEADER WITH NAVBAR ----------- -->
-    <header>
 
-      <!-- <nav class="navbar">
-        <a class="navbar-brand" href="#">
-          <img src="images/logo.svg">
+  <header>
+    <a href="#">
+      <img src="images/logo.svg" alt="Sunnside Logo" class="logo">
+    </a>
+
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li><a class="main-nav-link" href="#">About</a></li>
+        <li><a class="main-nav-link" href="#">Services</a></li>
+        <li><a class="main-nav-link" href="#">Projects</a></li>
+        <li><a class="main-nav-link nav-cta" href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+    </button>
+
+  </header>
+
+  <main>
+    <section class="section-hero">
+      <img src="images/mobile/image-header.jpg" alt="Slice of orange on the bottom of the page"
+        class="hero-img mobile-img">
+      <img src="images/desktop/image-header.jpg" alt="Slice of orange on the bottom of the page"
+        class="hero-img desktop-img">
+    </section>
+
+    <section class="section-why">
+      <div class="why-row1-col2">
+        <img class="why-img mobile-img" src="images/mobile/image-transform.jpg" alt="Image of an egg">
+        <img class="why-img desktop-img" src="images/desktop/image-transform.jpg" alt="Image of an egg">
+      </div>
+
+      <div class="why-text why-row1-col1">
+        <h2>Transform your brand</h2>
+        <p>
+          We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through
+          compelling visuals that do most of the marketing for you.
+        </p>
+        <a href="#" class="btn btn--yellow">Learn more</a>
+      </div>
+
+      <div>
+        <img class="why-img mobile-img" src="images/mobile/image-stand-out.jpg" alt="Image of a pink glass">
+        <img class="why-img desktop-img" src="images/desktop/image-stand-out.jpg" alt="Image of a pink glass">
+      </div>
+
+      <div class="why-text">
+        <h2>Stand out to the right audience</h2>
+        <p>
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
+          build and extend your brand in digital places.
+        </p>
+        <a href="#" class="btn btn--pink">Learn more</a>
+      </div>
+    </section>
+
+    <section class="section-how">
+      <div class="how-content how-content--green">
+        <img class="mobile-img" src="images/mobile/image-graphic-design.jpg" alt="Image of cherries with text.">
+        <img class="desktop-img" src="images/desktop/image-graphic-design.jpg" alt="Image of cherries with text.">
+        <h2>Graphic Design</h2>
+        <p>
+          Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+          potential clients’ attention.
+        </p>
+      </div>
+
+      <div class="how-content how-content--blue">
+        <img class="mobile-img" src="images/mobile/image-photography.jpg" alt="Image of an orange.">
+        <img class="desktop-img" src="images/desktop/image-photography.jpg" alt="Image of an orange.">
+        <h2>Photography</h2>
+        <p>
+          Increase your credibility by getting the most stunning, high-quality photos that improve your business
+          image.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-testimonials">
+      <div class="testimonials-container">
+        <h3>Client testimonials</h3>
+
+        <div class="testimonial-list">
+          <div class="testimonial">
+            <img src="images/image-emily.jpg" alt="Headshot of client">
+            <p>
+              We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
+              hit.
+            </p>
+            <h4>Emily R.</h4>
+            <h5>Marketing Director</h5>
+          </div>
+
+          <div class="testimonial">
+            <img src="images/image-thomas.jpg" alt="Headshot of client">
+            <p>
+              Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+              enjoyable experience.
+            </p>
+            <h4>Thomas S.</h4>
+            <h5>Chief Operating Officer</h5>
+          </div>
+
+          <div class="testimonial">
+            <img src="images/image-jennie.jpg" alt="Headshot of client">
+            <p>
+              Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
+
+              Highly recommended!
+            </p>
+            <h4>Jennie F.</h4>
+            <h5>Business Owner</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-gallery grid">
+      <img class="mobile-img" src="images/mobile/image-gallery-milkbottles.jpg" alt="Image of milkbottles">
+      <img class="mobile-img" src="images/mobile/image-gallery-orange.jpg" alt="Image of orange in a bowl">
+      <img class="mobile-img" src="images/mobile/image-gallery-cone.jpg" alt="Image of empty ice cream cone">
+      <img class="mobile-img" src="images/mobile/image-gallery-sugar-cubes.jpg" alt="Image of sugar cubes">
+
+      <img class="desktop-img" src="images/desktop/image-gallery-milkbottles.jpg" alt="Image of milkbottles">
+      <img class="desktop-img" src="images/desktop/image-gallery-orange.jpg" alt="Image of orange in a bowl">
+      <img class="desktop-img" src="images/desktop/image-gallery-cone.jpg" alt="Image of empty ice cream cone">
+      <img class="desktop-img" src="images/desktop/image-gallery-sugarcubes.jpg" alt="Image of sugar cubes">
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <img src="images/footer-logo.svg" alt="Logo" class="footer-logo">
+
+    <ul class="footer-nav-list">
+      <li><a href="#" class="footer-nav-link">About</a></li>
+      <li><a href="#" class="footer-nav-link">Services</a></li>
+      <li><a href="#" class="footer-nav-link">Projects</a></li>
+    </ul>
+
+    <ul class="social-media-links">
+      <li>
+        <a href="#" class="social-link">
+          <img class="social-icon" src="images/icon-facebook.svg" alt="Facebook icon">
         </a>
+      </li>
 
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle Navigation">
-          <span class="navbar-toggler-icon"><img src="images/icon-hamburger.svg"></span>
-        </button>
+      <li>
+        <a href="#" class="social-link">
+          <img class="social-icon" src="images/icon-instagram.svg" alt="Instagram icon">
+        </a>
+      </li>
 
-        <div class="collapse navbar-collapse bg-light" id="navLinks">
-          <ul class="navbar-nav">
-            <li class="navItem">
-              <a href="" class="nav-link">About</a>
-            </li>
-            <li class="navItem">
-              <a href="" class="nav-link">Services</a>
-            </li>
-            <li class="navItem">
-              <a href="" class="nav-link">Projects</a>
-            </li>
-            <li class="navItem last-link">
-              <a href="" class="nav-link">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav> -->
-      <div class="header-container">
-        <img class="mobile-image" src="images/mobile/image-header.jpg">
-        <img class="desktop-image" src="images/desktop/image-header.jpg">
-        <h1 class="header-text">We are creatives</h1>
-        <img class="header-icon" src="images/icon-arrow-down.svg">
-      </div>
-    </header>
+      <li>
+        <a href="#" class="social-link">
+          <img class="social-icon" src="images/icon-twitter.svg" alt="Twitter icon">
+        </a>
+      </li>
 
-    <!-- ----------- IMAGE AND TEXT ----------- -->
-    <div class="image-and-text">
-      <div class="item1">
-        <img class="mobile-image" src="images/mobile/image-transform.jpg">
-        <img class="desktop-image" src="images/desktop/image-transform.jpg">
-        <div class="text-content">
-          <h2>Transform your brand</h2>
-          <p>
-            We are a full-service creative agency specializing in helping brands grow fast.
-            Engage your clients through compelling visuals that do most of the marketing for you.
-          </p>
-          <a href="#">Learn more</a>
-        </div>
-      </div>
+      <li>
+        <a href="#" class="social-link">
+          <img class="social-icon" src="images/icon-pinterest.svg" alt="Pinterest icon">
+        </a>
+      </li>
+    </ul>
 
-      <div class="item2">
-        <img class="mobile-image" src="images/mobile/image-stand-out.jpg">
-        <img class="desktop-image" src="images/desktop/image-stand-out.jpg">
-        <div class="text-content">
-          <h2>Stand out to the right audience</h2>
-          <p>
-            Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
-            we’ll build and extend your brand in digital places.
-          </p>
-          <a href="#">Learn more</a>
-        </div>
-      </div>
-    </div>
+  </footer>
 
-    <!-- ----------- IMAGE WITH TEXT ----------- -->
-    <div class="image-with-text-container">
-      <div class="image-with-text item3">
-        <img class="mobile-image" src="images/mobile/image-graphic-design.jpg">
-        <img class="desktop-image" src="images/desktop/image-graphic-design.jpg">
-        <div>
-          <h2>Graphic design</h2>
-          <p>
-            Great design makes you memorable. We deliver artwork that underscores your brand message and captures
-            potential clients’ attention.
-          </p>
-        </div>
-      </div>
-
-      <div class="image-with-text item4">
-        <img class="mobile-image" src="images/mobile/image-photography.jpg">
-        <img class="desktop-image" src="images/desktop/image-photography.jpg">
-        <div>
-          <h2>Photography</h2>
-          <p>
-            Increase your credibility by getting the most stunning, high-quality photos that improve your business
-            image.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- ----------- TESTIMONIALS ----------- -->
-
-    <div class="testimonial-section">
-      <h2>Client testimonials</h2>
-
-      <div class="testimonial-list">
-        <div class="testimonial">
-          <img src="images/image-emily.jpg">
-          <p class="review">
-            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
-            hit.
-          </p>
-          <p class="reviewer">Emily R.</p>
-          <p class="reviewer-industry">Marketing Director</p>
-        </div>
-
-        <div class="testimonial">
-          <img src="images/image-thomas.jpg">
-          <p class="review">
-            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
-            enjoyable experience.
-          </p>
-          <p class="reviewer"> Thomas S.</p>
-          <p class="reviewer-industry">Chief Operating Officer</p>
-        </div>
-
-        <div class="testimonial">
-          <img src="images/image-jennie.jpg">
-          <p class=" review">Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
-            Highly
-            recommended!
-          </p>
-          <p class="reviewer">Jennie F.</p>
-          <p class="reviewer-industry">Business Owner</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- ----------- IMAGE GALLERY ----------- -->
-    <div class="image-gallery">
-      <img class="mobile-image" src="images/mobile/image-gallery-milkbottles.jpg">
-      <img class="mobile-image" src="images/mobile/image-gallery-orange.jpg">
-      <img class="mobile-image" src="images/mobile/image-gallery-cone.jpg">
-      <img class="mobile-image" src="images/mobile/image-gallery-sugar-cubes.jpg">
-
-      <img class="desktop-image" src="images/desktop/image-gallery-milkbottles.jpg">
-      <img class="desktop-image" src="images/desktop/image-gallery-orange.jpg">
-      <img class="desktop-image" src="images/desktop/image-gallery-cone.jpg">
-      <img class="desktop-image" src="images/desktop/image-gallery-sugarcubes.jpg">
-    </div>
-
-    <!-- ----------- FOOTER ----------- -->
-    <footer>
-      <h2>Sunnyside</h2>
-
-      <div class="links">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
-      </div>
-
-      <div class="social-media-links">
-        <a href="#"><img src="images/icon-facebook.svg"></a>
-        <a href="#"><img src="images/icon-instagram.svg"></a>
-        <a href="#"><img src="images/icon-twitter.svg"></a>
-        <a href="#"><img src="images/icon-pinterest.svg"></a>
-      </div>
-
-    </footer>
-
-  </div>
-
-  <!-- BOOTSTRAP JS LINK -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+  <!-- ICON PACKAGE -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

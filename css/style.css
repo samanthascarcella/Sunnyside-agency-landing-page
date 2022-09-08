@@ -1,0 +1,283 @@
+/* ------------------------ */
+/* MAIN HEADER              */
+/* ------------------------ */
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    background-color: hsl(200, 100%, 62%);
+    padding: 6.4rem 3.2rem;
+}
+
+.logo {
+    height: 3.0rem;
+}
+
+/* ------------------------ */
+/* NAVIGATION SECTION       */
+/* ------------------------ */
+.main-nav {
+    display: none;
+    font-size: 3rem;
+}
+
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #fff;
+}
+
+.btn-mobile-nav {
+    display: inline-block;
+}
+
+.main-nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.6rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 1.2rem 2.4rem;
+    border-radius: 25px;
+    cursor: pointer;
+
+    transition: all 0.2s;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+    background-color: #fff;
+    color: hsl(212, 27%, 19%);
+    font-family: "Fraunces", sans-serif;
+    text-transform: uppercase;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+    background-color: hsl(200, 93%, 78%);
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+    background-color: hsl(200, 93%, 78%);
+    color: #fff;
+}
+
+/* ------------------------ */
+/* HERO SECTION             */
+/* ------------------------ */
+
+.section-hero {
+    position: relative;
+    text-align: center;
+}
+
+.section-hero:before {
+    content: "We are creatives";
+    display: block;
+    position: absolute;
+    top: 25%;
+
+    font-family: "Fraunces", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 900;
+    letter-spacing: 1rem;
+    line-height: 1.4;
+}
+
+.section-hero:after {
+    content: url(/images/icon-arrow-down.svg);
+    display: block;
+    position: absolute;
+    top: 55%;
+    width: 100%
+}
+
+/* ------------------------ */
+/* WHY SECTION              */
+/* ------------------------ */
+
+.why-text {
+    background-color: hsl(26, 100%, 99%);
+    text-align: center;
+    padding: 6.4rem 2.4rem;
+}
+
+.why-text h2 {
+    font-size: 3.6rem;
+    margin-bottom: 3.2rem;
+    line-height: 1.2;
+}
+
+.why-text p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+    line-height: 1.6;
+    color: hsl(232, 10%, 55%);
+}
+
+/* ------------------------ */
+/* HOW SECTION              */
+/* ------------------------ */
+
+.how-content {
+    position: relative;
+    text-align: center;
+}
+
+.how-content--green {
+    color: hsl(167, 40%, 24%);
+}
+
+.how-content--blue {
+    color: hsl(198, 62%, 26%);
+}
+
+.how-content h2 {
+    position: absolute;
+    display: block;
+    top: 66%;
+    width: 100%;
+
+    font-size: 2.8rem;
+}
+
+.how-content p {
+    position: absolute;
+    display: block;
+    top: 77%;
+    width: 100%;
+    padding: 0 1.8rem;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+/* ------------------------ */
+/* TESTIMONIALS SECTION     */
+/* ------------------------ */
+
+.section-testimonials {
+    background-color: hsl(26, 100%, 99%);
+    text-align: center;
+}
+
+.section-testimonials h3 {
+    font-family: "Fraunces", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: hsl(210, 4%, 67%);
+    padding: 6.4rem 0;
+}
+
+.testimonial img {
+    width: 7.2rem;
+    border-radius: 50%;
+    margin-bottom: 3.2rem;
+}
+
+.testimonial p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: hsl(213, 9%, 39%);
+
+    padding: 0 2.2rem;
+    margin-bottom: 3.2rem;
+}
+
+.testimonial h4 {
+    color: hsl(212, 27%, 19%);
+    font-family: "Fraunces", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+
+    margin-bottom: 1.5rem;
+}
+
+.testimonial h5 {
+    color: hsl(210, 4%, 67%);
+    font-size: 1.4rem;
+
+    padding-bottom: 6.2rem;
+}
+
+/* ------------------------ */
+/* FOOTER                   */
+/* ------------------------ */
+
+.footer {
+    background-color: hsl(168, 48%, 69%);
+    text-align: center;
+
+    padding: 5.8rem 0 8.6rem 0;
+}
+
+.footer-logo {
+    width: 45%;
+    margin-bottom: 4.8rem;
+}
+
+.footer-nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 8.2rem;
+}
+
+.footer-nav-link:link,
+.footer-nav-link:visited {
+    font-size: 1.8rem;
+    font-weight: 500;
+    list-style: none;
+    text-decoration: none;
+    color: hsl(168, 34%, 41%);
+
+    transition: all 0.2s;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:active {
+    color: hsl(0, 0%, 100%);
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 9.6rem;
+}
+
+.social-link:link,
+.social-link:visited {
+    transition: all 0.2s;
+}
+
+.social-link:hover,
+.social-link:active {
+    filter: brightness(0) invert(1);
+}
+
+.social-icon {
+    width: 2.0rem;
+}

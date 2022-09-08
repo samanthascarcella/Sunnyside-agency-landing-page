@@ -40,7 +40,7 @@ PENDING
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- Flexbox & Grid
 - Mobile-first workflow
 
 ### What I learned
@@ -48,14 +48,14 @@ PENDING
 - Changing display order between mobile and desktop views (flexbox).
 - Layering and centering text over image. 
 - Move underline up. 
-- Creating a navbar that does pops over content (pending). 
+- Building a navigation section from scratch.
 
 ### Continued development
 
 This project is not complete. Remaining Components: 
-- Desktop view 
+- Navigation in mobile view
 - Underline styling
-- Navbar 
+- Font color corrections 
 
 ### Useful resources
 
